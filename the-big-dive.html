@@ -1,138 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="the-big-dive.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Big Dive</title>
+
+  <link rel="stylesheet" href="the-big-dive.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <nav>
-        <a href="/JosePeiro.github.io/">Back to Main Website</a>
-    </nav>
-    
-    <!-- Navigation and other common elements -->
+<!-- NAV -->
+<nav>
+  <a href="/JosePeiro.github.io/">← Back to Portfolio</a>
+</nav>
 
-    <!-- Project "Croak Clash" -->
-    <section id="croak-clash">
-        <div class="project-details-container">
-            <!-- Croak Clash Poster -->
-            <img src="images/PosterEat05.png" alt="Croak Clash Poster" class="project-poster" style="width:50%;">
+<section>
+  <div class="project-details-container">
 
-            <!-- Project Description -->
-            <div class="project-description">
-                <h3>Game Concept</h3>
-                <p>
-                    An underwater adventure: the player drives a submarine using the mobile phone as a controller. 
-                    The submarine direction is controlled by the gyroscope of the phone, there is a gas and stop button to either accelerate or stop the submarine. 
-                    In addition, there is a shooting system where the submarine needs to shoot (sea creature) to defend itself. 
-                    Finally, there is a special event where an octopus appears from the back of the submarine and grabs it, 
-                    here the player needs to shake the phone to break free from the octopus.
-                </p>
-            </div>
+    <!-- HERO -->
+    <h2>The Big Dive</h2>
+    <p>
+      Underwater adventure game where players control a submarine using mobile motion controls, combining exploration and combat mechanics.
+    </p>
 
-            <!-- Your Participation -->
-            <div class="your-participation">
-                <h3>My Participation</h3>
-                <p>
-                    In my role as the principal game designer for this project, my primary responsibilities revolved around Environment and Level Design. 
-                    This encompassed tasks such as creating documentation (GDD, SWOT, Reports), implementing assets in Unity, and developing the gameplay and enemy flowchart (shark's AI).    
-                    </p>
+    <img src="images/PosterEat05.png" class="project-poster">
 
-                <!-- Image Gallery -->
-                <h3>Game Design Document</h3>
-                <div class="image-gallery">
-                    <div class="scroll-container">
-                        <div class="scroll-content">
-                            <img src="images/TheBigDive/TBD-GDD1.png">
-                            <img src="images/TheBigDive/TBD-GDD2.png">
-                            <img src="images/TheBigDive/TBD-GDD3.png">
-                            <img src="images/TheBigDive/TBD-GDD4.png">
-                            <img src="images/TheBigDive/TBD-GDD5.png">
-                            <img src="images/TheBigDive/TBD-GDD6.png">
-                            <img src="images/TheBigDive/TBD-GDD7.png">
-                            <img src="images/TheBigDive/TBD-GDD8.png">
-                            <img src="images/TheBigDive/TBD-GDD9.png">
-                            <img src="images/TheBigDive/TBD-GDD10.png">
-                            <img src="images/TheBigDive/TBD-GDD11.png">
-                            <img src="images/TheBigDive/TBD-GDD12.png">
+    <!-- OVERVIEW -->
+    <div class="project-description">
+      <h3>Overview</h3>
+      <p>
+        The Big Dive is an underwater experience where players navigate a submarine using their phone as a controller.
+        Movement is controlled through the gyroscope, while additional mechanics include shooting enemies and escaping dynamic events such as an attacking octopus.
+      </p>
+    </div>
 
-                            <!-- Add more images as needed -->
-                        </div>
-                    </div>
-                    <button class="prev-button" onclick="scrollGallery(-1)">❮</button>
-                    <button class="next-button" onclick="scrollGallery(1)">❯</button>
-                </div>
-            </div>
+    <!-- ROLE -->
+    <div class="your-participation">
+      <h3>My Role</h3>
+      <p>
+        I worked as the principal game designer, focusing on environment and level design.
+        My responsibilities included creating documentation (GDD, SWOT, reports), implementing assets in Unity,
+        and designing gameplay systems such as enemy behaviour and flowcharts.
+      </p>
+    </div>
 
-            <div class="Game-flow">
-                <h3>Game Flow</h3>
-                <p>
-                    <ul> 
-                        concluding the ideation phase and finalizing the Game Design Document (GDD), the next step in the development process was to delve into the intricacies of game mechanics.
-                        To facilitate this crucial stage, I opted to construct a detailed flowchart. 
-                        This visual representation proved instrumental in enhancing the conceptualization and 
-                        understanding of both the gameplay dynamics and the artificial intelligence (AI) governing the sharks within the game.
-                    </ul>
+    <!-- PROCESS -->
+    <div class="your-participation">
+      <h3>Design Process</h3>
+      <p>
+        After completing the ideation and documentation phase, I focused on structuring gameplay systems.
+        I created flowcharts to visualise interactions, player behaviour, and AI systems,
+        ensuring clarity for both development and design decisions.
+      </p>
 
-                    <ul> 
-                        The flowchart served as a roadmap, offering a systematic depiction of the interplay between various game elements, 
-                        player interactions, and the nuanced behaviors of the in-game sharks. 
-                        This visualization not only provided clarity to the development team but also served as a 
-                        valuable reference throughout the implementation phase. By mapping out the relationships and dependencies within the game mechanics, 
-                        the flowchart became an indispensable tool in ensuring a cohesive and engaging gaming experience.
-                    </ul>
-                </p>
-                <div class="Game-Flow-image">
-                    <img src="images/TheBigDive/Game Flow Summary.png">
-                </div>
+      <h4>Game Design Document</h4>
 
-                <h3>Game Flow Shark AI</h3>
-                <p>
+      <!-- 🔥 CAROUSEL -->
+      <div class="carousel">
 
-                </p>
-                <div class="Game-Flow-image">
-                    <img src="images/TheBigDive/SharkAI.png">
-                </div>
+        <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
 
-                <div class="More-contribution">
-                    <h3>Additional contribution</h3>
-                    <ul>
-                        <li>3D assets creation when needed</li>
-                        <li>Update Planning</li>
-                        <li>Schedule</li>
-                        <li>PR</li>
-                    </ul>
-                </div>
+        <div class="carousel-track">
+          <img src="images/TheBigDive/TBD-GDD1.png" class="slide active">
+          <img src="images/TheBigDive/TBD-GDD2.png" class="slide">
+          <img src="images/TheBigDive/TBD-GDD3.png" class="slide">
+          <img src="images/TheBigDive/TBD-GDD4.png" class="slide">
+          <img src="images/TheBigDive/TBD-GDD5.png" class="slide">
+          <img src="images/TheBigDive/TBD-GDD6.png" class="slide">
+          <img src="images/TheBigDive/TBD-GDD7.png" class="slide">
+          <img src="images/TheBigDive/TBD-GDD8.png" class="slide">
+          <img src="images/TheBigDive/TBD-GDD9.png" class="slide">
+          <img src="images/TheBigDive/TBD-GDD10.png" class="slide">
+          <img src="images/TheBigDive/TBD-GDD11.png" class="slide">
+          <img src="images/TheBigDive/TBD-GDD12.png" class="slide">
+        </div>
 
-                <!-- Videos or GIFs -->
-                <div class="project-media">
-                    <h3>Project Media</h3>
-                    <img src="images/TheBigDive/Gameplaypic.png">
-                    <img src="images/TheBigDive/Gameplaypic1.png">
-                    <img src="images/TheBigDive/Gameplaypic2.jpg">
-                    <img src="images/TheBigDive/Gameplaypic3.png">
+        <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
 
+      </div>
+    </div>
 
-                    <!-- Add videos or GIFs here -->
+    <!-- GAME FLOW -->
+    <div class="Game-flow">
+      <h3>Game Flow</h3>
+      <p>
+        Flowcharts were used to structure gameplay interactions and AI behaviour, particularly for enemy systems such as sharks.
+      </p>
 
-                    <h3>Gameplay showcase</h3>
-                    <!-- <video controls width="100%">
-                        <source src="images/CroakClashhGDD/CroakclashShowOff.mp4" type="video/mp4">
-                    </video> -->
-                    <iframe width="100%" height="515" src="https://www.youtube.com/embed/zESHXUQJDW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="Game-Flow-image">
+        <img src="images/TheBigDive/Game Flow Summary.png">
+      </div>
 
+      <h3>Shark AI</h3>
+      <div class="Game-Flow-image">
+        <img src="images/TheBigDive/SharkAI.png">
+      </div>
+    </div>
 
-                </div>
-            </div>
-    </section>
+    <!-- CONTRIBUTION -->
+    <div class="More-contribution">
+      <h3>Additional Contributions</h3>
+      <ul>
+        <li>3D asset creation</li>
+        <li>Planning and scheduling</li>
+        <li>PR and presentation</li>
+      </ul>
+    </div>
 
-    <!-- Script for image gallery scrolling -->
-    <script>
-        function scrollGallery(direction) {
-            const container = document.querySelector('.scroll-container');
-            const scrollAmount = direction * container.offsetWidth;
-            container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-        }
-    </script>
+    <!-- MEDIA -->
+    <div class="project-media">
+      <h3>Project Media</h3>
+
+      <img src="images/TheBigDive/Gameplaypic.png">
+      <img src="images/TheBigDive/Gameplaypic1.png">
+      <img src="images/TheBigDive/Gameplaypic2.jpg">
+      <img src="images/TheBigDive/Gameplaypic3.png">
+
+      <h3>Gameplay Showcase</h3>
+      <iframe src="https://www.youtube.com/embed/zESHXUQJDW8" allowfullscreen></iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- CAROUSEL SCRIPT -->
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (i === index) slide.classList.add("active");
+  });
+}
+
+function moveSlide(direction) {
+  currentSlide += direction;
+
+  if (currentSlide < 0) currentSlide = slides.length - 1;
+  if (currentSlide >= slides.length) currentSlide = 0;
+
+  showSlide(currentSlide);
+}
+</script>
 
 </body>
 </html>

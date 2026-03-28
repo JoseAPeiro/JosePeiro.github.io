@@ -1,164 +1,142 @@
-/* Add some basic styling to improve readability */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
+  font-family: "Poppins", sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
 }
 
-/* Style for project sections */
-.project-section {
-    margin-bottom: 40px;
+/* BACKGROUND */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+
+  background-image:
+    url("data:image/svg+xml,%3Csvg width='140' height='140' viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Ccircle cx='20' cy='20' r='6' stroke='%2322c55e' stroke-opacity='0.4'/%3E%3Crect x='70' y='15' width='10' height='10' transform='rotate(45 75 20)' stroke='%23f472b6' stroke-opacity='0.4'/%3E%3Cpath d='M100 90 l10 -10 l10 10 z' stroke='%2360a5fa' stroke-opacity='0.4'/%3E%3C/g%3E%3C/svg%3E");
+
+  background-repeat: repeat;
+  opacity: var(--shape-opacity);
 }
 
-/* Style for project details container */
+/* CONTAINER */
 .project-details-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 3rem;
 
-/* Style for project posters */
-.project-poster {
-    display: block;
-    margin: 0 auto;
-    width: 70%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+  background: #0f172a; /* 👈 same as body */
+  border-radius: 16px;
 
-/* Style for project titles */
-.project-description h2,
-.your-participation h3,
-.game-flow h3,
-.more-contribution h3,
-.project-media h3 {
-    color: #4285f4; /* Google Blue */
-}
-
-/* Style for paragraphs in project details */
-.project-description p,
-.your-participation p,
-.game-flow p {
-    margin-bottom: 15px;
-}
-
-/* Style for lists in additional contributions */
-.more-contribution ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.more-contribution li {
-    padding-left: 20px;
-    position: relative;
-}
-
-.more-contribution li:before {
-    content: "\2022"; /* Bullet point */
-    position: absolute;
-    left: 0;
-    color: #4285f4; /* Google Blue */
-}
-
-/* Style for image galleries */
-.image-gallery {
-    overflow: hidden;
-    position: relative;
-}
-
-.scroll-container {
-    display: flex;
-    overflow-x: auto;
-}
-
-.scroll-content {
-    display: flex;
-}
-
-.image-gallery img {
-    max-width: 100%;
-    height: auto;
-    margin-right: 10px;
-    border-radius: 8px;
-}
-
-/* Style for navigation buttons */
-.prev-button,
-.next-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #f0f0f0;
-    border: none;
-    color: #333;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.prev-button {
-    left: 0;
-}
-
-.next-button {
-    right: 0;
-}
-
-/* Style for Game Flow image container */
-.Game-flow .Game-Flow-image {
-    max-width: 100%;
-    overflow: hidden; /* Ensure the image doesn't overflow its container */
-}
-
-/* Style for Game Flow image */
-.Game-flow .Game-Flow-image img {
-    display: block;
-    width: 100%; /* Adjust the width as needed */
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Style for Project Media section */
-.project-media {
-    margin-top: 20px;
-}
-
-.project-media h3 {
-    color: #4285f4; /* Google Blue */
-    margin-bottom: 15px; /* Add spacing between title and content */
-}
-
-.project-media img,
-.project-media video {
-    max-width: 100%; /* Adjust the maximum width as needed */
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px; /* Add some spacing between images and videos */
-    display: block; /* Ensure images and videos are displayed as blocks */
-    margin-left: auto; /* Center images and videos */
-    margin-right: auto;
-}
-
-h3 {
-    color: #007bff; /* Change the color to your preference */
-    font-family: 'Arial', sans-serif; /* Change the font family if needed */
-    font-size: 1.5em; /* Adjust the font size as per your design */
-    margin-bottom: 10px; /* Add margin at the bottom for spacing */
+  border: 1px solid #1f2937;
 }
 
 nav {
-    background-color: #f1f1f1;
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  text-align: center;
+  padding: 1rem;
 }
 
 nav a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px 10px;
+  color: #22c55e;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin-top: 2rem;
+  color: #22c55e;
+}
+
+p {
+  color: #9ca3af;
+  max-width: 950px;
+}
+
+.project-poster {
+  display: block;
+  margin: 2rem auto;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.project-section {
+  margin-top: 3rem;
+}
+
+/* CAROUSEL */
+.carousel {
+  position: relative;
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* BUTTONS */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.carousel-btn:hover {
+  background: #22c55e;
+  color: black;
+}
+
+.prev {
+  left: -40px;
+}
+
+.next {
+  right: -40px;
+}
+
+/* FLOW IMAGES */
+.flow-image {
+  overflow-x: auto;
+}
+
+.flow-image img {
+  max-width: 100%;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+
+/* MEDIA */
+iframe {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .prev { left: 10px; }
+  .next { right: 10px; }
 }
