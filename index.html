@@ -1,316 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jose Peiro</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="projects.css" />
-    <link rel="stylesheet" href="mediaqueries.css" /> <!-- Add this line -->
-</head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Jose Peiro</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Jose Peiro</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <!-- <img src="./images/ProfilePicture.png" alt="Jose Peiro profile picture" /> -->
-        <img src="./images/Jose1.jpg" alt="Jose Peiro profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Jose Peiro</h1>
-        <p class="section__text__p2">Business Developer Manager</p>
-                <p class="section__text__p2">UI/UX Designer</p>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jose Peiro</title>
 
-        <div class="btn-container">
-          <!-- <button
-            class="btn btn-color-2"
-            onclick="window.open('./images/Jose-Peiro-CV.pdf')"
-          >
-            Download CV
-          </button>  -->
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/jose-peiro-b533a2199/'"
-          />
-        </div>
-      </div>
-    </section>
-<!-- ---------------------------------------------------------- ABOUT---------------------------------------------------------- -->
-<section id="about">
-  <!-- <p class="section__text__p1">Get To Know More</p> -->
-  <h1 class="title">About Me</h1>
-  <div class="section-container">
-    <div class="about-details-container">
-      <div class="about-container">
-        <div class="details-container">
-          <!-- <h1 class="education">Education</h1> -->
-          <p>          
-          My professional focus is on supporting digital products through planning, organisation and performance focused work. Through my experience at Denda Games and Liquid Ice Studios, I have worked on projects that required clear documentation, structured coordination and continuous improvement of existing systems. I am comfortable managing complex work across teams, keeping track of priorities and timelines, and supporting both creative and business oriented tasks. I enjoy working closely with others, take responsibility for the details, and am motivated to keep learning and improving the quality of my work.
-        </p>
-        </div>
-      </div>
-      <div class="text-container">
-        <p>
-          <!-- My professional focus is on Game Design, specialising in UI/UX and systems design, driven by a passion for creating engaging and intuitive player experiences. 
-          My experience at Denda Games and Liquid Ice Studios shows my capability in detailed project management, 
-          from developing clear documentation and UI/UX designs to implementing new technologies and optimising existing systems. 
-          I thrive on collaboration in team oriented settings and take genuine satisfaction in coordinating various project aspects, including documentation and business development. 
-          I am committed to continuously learning, ensuring I deliver high quality results with determination and adaptability. -->
-        </p>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container nav-container">
+    <h2 class="logo">Jose Peiro</h2>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container hero-container">
+
+    <div class="hero-image">
+      <img src="./images/Jose1.jpg" alt="Jose Peiro" />
+    </div>
+
+    <div class="hero-text">
+      <p>Hello, I'm</p>
+      <h1>Jose Peiro</h1>
+      <h3>UI/UX Designer & Business Developer Manager</h3>
+
+      <div class="btn-container">
+        <!-- <a href="./images/" class="btn">Download CV</a> -->
+        <a href="#contact" class="btn btn-accent">Contact</a>
       </div>
     </div>
+
   </div>
-  <img
-    src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#Portfolio'"
-  />
 </section>
-<!-- ---------------------------------------------------------- PROFESSIONAL EXP------------------------------------------------ -->
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+
+    <p class="about-text">
+      My professional focus is on supporting digital products through planning, organisation and performance focused work. 
+      Through my experience at Denda Games and Liquid Ice Studios, I have worked on projects that required clear documentation, 
+      structured coordination and continuous improvement of existing systems. I am comfortable managing complex work across teams, 
+      keeping track of priorities and timelines, and supporting both creative and business oriented tasks. I enjoy working closely with others, 
+      take responsibility for the details, and am motivated to keep learning and improving the quality of my work. </p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <h2 class="section-title">Professional Experience</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="./images/DendaGamesStuff/Dendagameslogo.png" alt="Denda Games">
+        <h3>Denda Games</h3>
+        <p>Worked on game design, UI/UX, and Business Development.</p>
+        <a href="./dendagames.html" class="btn-small">Learn More</a>
+      </div>
+
+      <div class="card">
+        <img src="./images/DailyUI.png" alt="Daily UI">
+        <h3>Daily UI/UX Challenge</h3>
+        <p>Challenging myself on a daily basis.</p>
+        <a href="./Daily-UI-Challenge.html" class="btn-small">Learn More</a>
+      </div>
+
+      <div class="card">
+        <img src="./images/liquidicestudios_logo.png" alt="Liquid Ice">
+        <h3>Internship</h3>
+        <p>Supported development and system improvements.</p>
+        <a href="./liquidicestudios.html" class="btn-small">Learn More</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
 <section id="projects">
-      <h1 class="title">Professional Experience</h1>
-      <div class="about-containers"> <!-- Updated class name -->
-<!------------ Project -->
-        <div class="projects-details-container color-container">
-          <div class="article-container">
-            <img
-              src="./images/Dendagameslogo.png"
-              alt="Project 5"
-              class="project-img"
-            />
-          </div>
-          <h2 class="Portfolio-sub-title project-title">Denda Games </h2>
-          <div class="btn-container">
-            <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='./dendagames.html'"
-            >
-            Learn More
-          </button>
-        </div>
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="./images/Poster.png" alt="">
+        <h3>Croak Clash</h3>
+        <p>Designed gameplay systems and UI focused on clarity and player feedback.</p>
+        <a href="./croak-clash.html" class="btn-small">Learn More</a>
       </div>
-    <!------------ Project -->
-        <div class="projects-details-container color-container">
-          <div class="article-container">
-            <img
-              src="./images/liquidicestudios_logo.png"
-              alt="Project 5"
-              class="project-img"
-            />
-          </div>
-          <h2 class="Portfolio-sub-title project-title">Internship </h2>
-          <div class="btn-container">
-            <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='./liquidicestudios.html'"
-            >
-            Learn More
-          </button>
-        </div>
+
+      <div class="card">
+        <img src="./images/PosterEat05.png" alt="">
+        <h3>The Big Dive</h3>
+        <p>Worked on mechanics and immersive player experience.</p>
+        <a href="./the-big-dive.html" class="btn-small">Learn More</a>
       </div>
-<!------------ Project -->
+
+      <div class="card">
+        <img src="./images/Plush-Down.png" alt="">
+        <h3>Plush Down</h3>
+        <p>Created engaging systems and interactive design elements.</p>
+        <a href="./plush-down.html" class="btn-small">Learn More</a>
       </div>
-        <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <!-- --------------------------------------------------------- Projects ---------------------------------------------------->
-    <section id="projects">
-      <h1 class="title">Projects</h1>
-      <div class="about-containers"> <!-- Updated class name -->
-    <!------------ Project -->
-          <div class="projects-details-container color-container">
-            <div class="article-container">
-              <img
-                src="./images/Poster.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="Portfolio-sub-title project-title">Croak Clash</h2>
-            <div class="btn-container">
-              <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='./croak-clash.html'"
-              >
-              Learn More
-              </button>
-            </div>
-          </div>
-    <!------------ Project -->
-          <div class="projects-details-container color-container">
-            <div class="article-container">
-              <img
-                src="./images/PosterEat05.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="Portfolio-sub-title project-title">The Big Dive</h2>
-            <div class="btn-container">
-              <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='./the-big-dive.html'"
-              >
-              Learn More
-              </button>
-            </div>
-          </div>
-    <!------------ Project -->
-          <div class="projects-details-container color-container">
-            <div class="article-container">
-              <img
-                src="./images/Plush-Down.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="Portfolio-sub-title project-title">Plush-Down</h2>
-            <div class="btn-container">
-              <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='./plush-down.html'"
-              >
-              Learn More
-              </button>
-            </div>
-          </div>
-    <!------------ Project -->
-          <div class="projects-details-container color-container">
-            <div class="article-container">
-              <img
-                src="./images/Get the fluff out.png"
-                alt="Project 5"
-                class="project-img"
-              />
-            </div>
-            <h2 class="Portfolio-sub-title project-title">Get the fluff out!</h2>
-            <div class="btn-container">
-              <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='./get-the-fluff-out.html'"
-              >
-              Learn More
-              </button>
-            </div>
-        </div>
-    <!------------ Project -->
-          <div class="projects-details-container color-container">
-            <div class="article-container">
-              <img
-                src="./images/3Dmodels.png"
-                alt="Project 4"
-                class="project-img"
-              />
-            </div>
-            <h2 class="Portfolio-sub-title project-title"> 3D models</h2>
-            <div class="btn-container">
-              <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='./3DModels.html'"
-              >
-              Learn More
-              </button>
-            </div>
-          </div>
-        <!------------ Project -->
-        <div class="projects-details-container color-container">
-          <div class="article-container">
-            <img
-              src="./images/LogoTest1.png"
-              alt="Project 6"
-              class="project-img"
-            />
-          </div>
-          <h2 class="Portfolio-sub-title project-title">IMT&S </h2>
-          <h2 class="Portfolio-sub-title project-title">Game Designer </h2>
-          <div class="btn-container">
-            <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='./IMT&S.html'"
-            >
-            Learn More
-          </button>
-        </div>
+
+      <div class="card">
+        <img src="./images/Get the fluff out.png" alt="">
+        <h3>Get the Fluff Out</h3>
+        <p>Developed playful mechanics and visual concepts.</p>
+        <a href="./get-the-fluff-out.html" class="btn-small">Learn More</a>
       </div>
+
+      <div class="card">
+        <img src="./images/3Dmodels.png" alt="">
+        <h3>3D Models</h3>
+        <p>Created assets and environments for game projects.</p>
+        <a href="./3DModels.html" class="btn-small">Learn More</a>
       </div>
-        <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <!-- --------------------------------------------------------- contact -->
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:josepeiro98@gmail.com">josepeiro98@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/jose-peiro-b533a2199/">LinkedIn</a></p>
-        </div>
+
+      <div class="card">
+        <img src="./images/LogoTest1.png" alt="">
+        <h3>IMT&S</h3>
+        <p>Game design work focused on structure and usability.</p>
+        <a href="./IMT&S.html" class="btn-small">Learn More</a>
       </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container contact-container">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-box">
+      <p>josepeiro98@gmail.com</p>
+      <a href="https://www.linkedin.com/in/jose-peiro-b533a2199/">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+</body>
 </html>
