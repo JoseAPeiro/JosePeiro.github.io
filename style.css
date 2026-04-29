@@ -187,7 +187,7 @@ nav {
 /* GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* desktop default */
   gap: 1.5rem;
 }
 
@@ -223,13 +223,16 @@ nav {
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
+/* TABLET */
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  .nav-links {
-    display: none;
+/* MOBILE */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
